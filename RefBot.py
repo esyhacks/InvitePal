@@ -215,7 +215,7 @@ async def get_link(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
         user_id = update.effective_user.id
         link = f"https://t.me/{BOT_USERNAME}?start={user_id}"
-        await context.bot.send_message(chat_id=update.effective_chat.id, text=f"*Your referral link:*\n`{link}`", parse_mode="Markdown")
+        await context.bot.send_message(chat_id=update.effective_chat.id, text=f"*Your referral link:\n{link}*", parse_mode="Markdown")
         await context.bot.send_sticker(chat_id=update.effective_chat.id, sticker=STICKER_ID_4)
         await context.bot.send_message(chat_id=update.effective_chat.id, text=f"*Share among your friends, {update.effective_user.first_name}!*", parse_mode="Markdown")
         logger.info(f"Sent referral link to user {user_id}")
