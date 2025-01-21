@@ -244,7 +244,7 @@ async def referrals(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     # Fetch user details using the Telegram API
                     user = await context.bot.get_chat(telegram_id)
                     full_name = f"{user.first_name} {user.last_name}" if user.last_name else user.first_name
-                    username = f"@{user.username}" if user.username else "(no username)"
+                    username = f"@{user.username}" if user.username else "no username"
                     message += f"*- {full_name} ({username})*\n"
                 except Exception as e:
                     # Handle cases where the Telegram ID is invalid or user info is not accessible
