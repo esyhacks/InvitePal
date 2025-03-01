@@ -125,4 +125,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Start sharing and earning rewards today with **InvitePal**! 🎉
+Start sharing and earning rewards today with [InvitePal](https://t.me/ehrefbot)! 🎉
